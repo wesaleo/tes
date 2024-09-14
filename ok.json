@@ -1,0 +1,24 @@
+{
+  "id": "your-power-up-id",
+  "name": "Trello to Google Sheets",
+  "description": "Integrasi antara Trello dan Google Sheets.",
+  "capabilities": {
+    "card-buttons": [
+      {
+        "text": "Save to Google Sheets",
+        "callback": {
+          "url": "https://script.google.com/macros/s/your-script-id/exec",
+          "method": "post",
+          "parameters": {
+            "name": "card.name",
+            "due": "card.due",
+            "shortUrl": "card.shortUrl"
+          }
+        }
+      }
+    ]
+  },
+  "icon": {
+    "url": "https://your-domain.com/icon.png"
+  }
+}
